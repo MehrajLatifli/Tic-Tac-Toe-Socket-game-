@@ -1,0 +1,89 @@
+﻿<Window x:Class="Tic_Tac_Toe__Socket_game_.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tic_Tac_Toe__Socket_game_" xmlns:controls="clr-namespace:AForge.Controls;assembly=AForge.Controls"
+        mc:Ignorable="d"
+        Title="Tic-Tac-Toe"  MinHeight="800" MinWidth="700" MaxHeight="600" MaxWidth="600" Icon="logo.jpeg">
+    <DockPanel>
+
+        <Grid>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1.5*"></RowDefinition>
+                <RowDefinition Height="1*"></RowDefinition>
+                <RowDefinition Height="4*"></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <Grid Grid.Row="0" Background="Wheat">
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*"></RowDefinition>
+                    <RowDefinition Height="1*"></RowDefinition>
+                    
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"></ColumnDefinition>
+                    <ColumnDefinition Width="3*"></ColumnDefinition>
+                    <ColumnDefinition Width="2*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <TextBlock Grid.Row="0" Grid.Column="0" Text="IP Adress: " FontSize="20" Margin="0,20,0,0" Padding="5"></TextBlock>
+
+                <TextBox x:Name="IPAdressTextBox" Grid.Row="0" Grid.Column="1" Margin="5" Height="40" FontSize="25" Foreground="Purple"></TextBox>
+
+                <TextBlock Grid.Row="1" Grid.Column="0" Text="Port: " FontSize="20" Margin="0,20,0,0" Padding="5"></TextBlock>
+
+                <TextBox x:Name="PortTextBox" Grid.Row="1" Grid.Column="1" Margin="5" Height="40" FontSize="25" Foreground="Purple"></TextBox>
+
+
+
+
+
+                
+                <Image x:Name="yourImage" Grid.Row="0" Grid.Column="2" Margin="5" Height="150" Width="150"></Image>
+                <Image x:Name="otherImage"  Grid.Row="1" Grid.Column="2"  Margin="5" Height="45" Width="45"></Image>
+
+           
+
+            </Grid>
+
+            <Grid Grid.Row="1" Background="Red">
+
+                <Button x:Name="ConnectButton" Margin="5" Content="Connect" Foreground="Purple" FontSize="25" FontWeight="Bold" Click="ConnectButton_Click" ></Button>
+
+            </Grid>
+
+            <Grid Grid.Row="2" Background="Wheat">
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*"></RowDefinition>
+                    <RowDefinition Height="1*"></RowDefinition>
+                    <RowDefinition Height="1*"></RowDefinition>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"></ColumnDefinition>
+                    <ColumnDefinition Width="1*"></ColumnDefinition>
+                    <ColumnDefinition Width="1*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <Button x:Name="Button_1" Grid.Row="0" Grid.Column="0" Margin="5" Background="Purple" Foreground="Red" FontSize="50" Click="Button_1_Click"></Button>
+                <Button x:Name="Button_2" Grid.Row="0" Grid.Column="1" Margin="5" Background="Purple" Foreground="Red" FontSize="50" Click="Button_2_Click"></Button>
+                <Button x:Name="Button_3" Grid.Row="0" Grid.Column="2" Margin="5" Background="Purple" Foreground="Red" FontSize="50" Click="Button_3_Click"></Button>
+                                                                                                                                    
+                <Button x:Name="Button_4" Grid.Row="1" Grid.Column="0" Margin="5" Background="Purple" Foreground="Red" FontSize="50" Click="Button_4_Click"></Button>
+                <Button x:Name="Button_5" Grid.Row="1" Grid.Column="1" Margin="5" Background="Purple" Foreground="Red" FontSize="50" Click="Button_5_Click"></Button>
+                <Button x:Name="Button_6" Grid.Row="1" Grid.Column="2" Margin="5" Background="Purple" Foreground="Red" FontSize="50" Click="Button_6_Click"></Button>
+                                                                                                                                     
+                <Button x:Name="Button_7" Grid.Row="2" Grid.Column="0" Margin="5" Background="Purple" Foreground="Red" FontSize="50" Click="Button_7_Click"></Button>
+                <Button x:Name="Button_8" Grid.Row="2" Grid.Column="1" Margin="5" Background="Purple" Foreground="Red" FontSize="50" Click="Button_8_Click" ></Button>
+                <Button x:Name="Button_9" Grid.Row="2" Grid.Column="2" Margin="5" Background="Purple" Foreground="Red" FontSize="50" Click="Button_9_Click"></Button>
+            </Grid>
+
+        </Grid>
+
+    </DockPanel>
+</Window>
