@@ -1,4 +1,4 @@
-# <img src="https://user-images.githubusercontent.com/30021708/164949862-11941cd7-e062-4f06-9930-b9b530c7db2d.jpeg" style="width:100px"/>Tic-Tac-Toe (Socket-game)
+# <img src="https://user-images.githubusercontent.com/30021708/164949862-11941cd7-e062-4f06-9930-b9b530c7db2d.jpeg" style="width:100px"/> Tic-Tac-Toe (Socket-game)
 
 
 Example for Lan game (Tic-Tac-Toe)
